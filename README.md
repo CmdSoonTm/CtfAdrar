@@ -16,6 +16,6 @@ Idées CTF
   5. RewriteRule ^/intro$ /var/www/ctfadrar/intro [L]
   6. RewriteRule ^/bienvenue$ /var/www/ctfadrar/index.html [L]
 
-  Un script bash est dispo pour l'install d'Apache2 + création user dédié + configuration site -- ctfadrar_config.sh
+  Un script bash est dispo pour l'install d'Apache2/NodeJs/Vue-cli + création user dédié + configuration site -- ctfadrar_config.sh
 
 ### Please amis Devs, ne me jugez pas ^^
