@@ -9,12 +9,12 @@ Idées CTF
   5. Flag03 qui fait plaisir -- Failles services Linux + Escalation privileges via sudo -- ( Plannifié )
 
 # Modrewrite
-  Les chemins sont cachés par flags
-  RewriteRule ^/flag01$ /var/www/ctfadrar/flag01 [L]
-  RewriteRule ^/flag02$ /var/www/ctfadrar/flag02 [L]
-  RewriteRule ^/flag03$ /var/www/ctfadrar/flag03 [L]
-  RewriteRule ^/intro$ /var/www/ctfadrar/intro [L]
-  RewriteRule ^/bienvenue$ /var/www/ctfadrar/index.html [L]
+  1. Les chemins sont cachés par flags
+  2. RewriteRule ^/flag01$ /var/www/ctfadrar/flag01 [L]
+  3. RewriteRule ^/flag02$ /var/www/ctfadrar/flag02 [L]
+  4. RewriteRule ^/flag03$ /var/www/ctfadrar/flag03 [L]
+  5. RewriteRule ^/intro$ /var/www/ctfadrar/intro [L]
+  6. RewriteRule ^/bienvenue$ /var/www/ctfadrar/index.html [L]
 
   Un script bash est dispo pour l'install d'Apache2 + création user dédié + configuration site -- ctfadrar_config.sh
 
