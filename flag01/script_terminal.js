@@ -54,7 +54,7 @@ function createStar() {
 function printLines(lines) {
     let lineIndex = 0;
     let charIndex = 0;
-    let delay = 3;
+    let delay = 26;
     let lineDelay = 100;
     
     let terminalElement = document.getElementById('terminal');
