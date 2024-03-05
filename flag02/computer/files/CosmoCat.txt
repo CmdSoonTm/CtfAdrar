@@ -1,3 +1,8 @@
+/// Fichier recupere sur le compte de l'admin d'Astrobooking.coin ///
+
+Grace a une faille de securite du site j'ai pu infiltrer le reseau, et recuperer des infos
+
+
 ###
 Titre: CosmoCat.txt - L'Art de Regrouper des Fichiers pour Capturer une Cle Privee SSH
 ###

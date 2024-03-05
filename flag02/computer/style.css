@@ -25,8 +25,8 @@ body {
     height: 69px;
     background: url('images/fileicon.png');
     position: absolute;
-    top: 200px;
-    left: 120px;
+    top: 400px;
+    left: 480px;
     cursor: move;
     opacity: 0.9;
 }
@@ -57,10 +57,28 @@ body {
 
 #button-container {
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#button-container button {
+    background: linear-gradient(to right, #515d5f, #6ea5b8);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
+    transition: all 0.3s;
+}
+
+#button-container button:hover {
+    transform: scale(1.1);
 }
