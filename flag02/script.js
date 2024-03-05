@@ -26,7 +26,7 @@ function printLines(lines) {
             button.innerText = "Acceder à l'ordinateur";
             button.className = 'centered-button';
             button.onclick = function() {
-                window.location.href = 'com/compute.html';
+                window.location.href = 'bureau/index.html';
             };
             footer.appendChild(button);
             footer.style.display = 'flex';

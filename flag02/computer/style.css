@@ -20,3 +20,47 @@ body {
     align-items: center;
 }
 
+#draggable {
+    width: 69px;
+    height: 69px;
+    background: url('images/fileicon.png');
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    cursor: move;
+    opacity: 0.9;
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: #2b2b2b;
+    padding: 4px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.context-menu li {
+    padding: 2px;
+    cursor: pointer;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
