@@ -1,13 +1,3 @@
-function storeCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-
 function getUserNameCookie() {
     let cookieArr = document.cookie.split(";");
     for(let i = 0; i < cookieArr.length; i++) {
@@ -30,7 +20,7 @@ function checkCookieAndRedirect(cookieName) {
         }
     }
 
-    window.history.back();
+    window.location.href = '../computer/index.html';
 }
 
 function printLines(lines) {
@@ -43,7 +33,7 @@ function printLines(lines) {
     let footer = document.createElement('footer');
     document.body.appendChild(footer);
 
-    checkCookieAndRedirect("Co0k1e");
+    checkCookieAndRedirect("CosmoC@t");
 
     function printNextCharacter() {
         if(lineIndex < lines.length) {
@@ -60,10 +50,10 @@ function printLines(lines) {
             terminalElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
         } else {
             let button = document.createElement('button');
-            button.innerText = "Let's go";
+            button.innerText = "Accepter la connection entrante";
             button.className = 'centered-button';
             button.onclick = function() {
-                window.location.href = '../../flag02/index.html';
+                window.location.href = '../../flag03/index.html';
             };
             footer.appendChild(button);
             footer.style.display = 'flex';
@@ -76,26 +66,24 @@ function printLines(lines) {
 let userName = getUserNameCookie('userName');
 
 let lines = [
-    'Bravo ' + userName + ' !',
-    'Tu as réussi à passer la première étape !!',
+    'Félicitation agent ' + userName + ' !',
+    'Tu as trouvé où se cachait le Flag {CosmoC@t} !!',
     '',
-    'Pour te récompenser, voici le flag pour {Co0k1e} : T@f2024{TerminalAmi31}',
-    '',
-    'Tu es maintenant prêt pour la suite.',
-    'Ce n\'étais pas trop difficile, n\'est-ce pas ?',
-    'Je te préviens, connaissant Mr Anderson, ça va se corser...',
-    '',
-    'En tout cas, je suis fier de toi !',
-    'Mais n\'attendons pas plus longtemps, allons-y !',
-    '',
-    '"Le but ici est de suivre le fil de l\'enquête."',
-    '"Tu devras trouver des indices pour avancer, et résoudre des énigmes."',
-    '',
-    '"Prends ton temps... pas trop quand même, je ne veux pas finir recyclé en grille-pain."',
-    '"Je te conseille de bien regarder partout, et de ne pas hésiter à fouiller."',
-    '"Comprends ce que tu fais, et pourquoi tu le fais."',
-    '',
-    '"Je te souhaite bonne chance, et que la force soit avec toi... Agent ' + userName + '."',
+    'On va pouvoir poursuivre la mission.',
+    'On sait ne où toujours pas où se trouve Mr. Anderson, il faut absolument trouver un moyen de le localiser.',
+    '.........................',
+    '...INCOMING CONNECTION...',
+    '.........................',
+    '...',
+    'Hey, on dirait que nous avons une connexion entrante...',
+    'Je vais essayer de la tracer pour voir d\'où elle provient.',
+    '...',
+    '!!! C\'est Mr. Anderson !!!',
+    'Il est en train de nous envoyer sa position.',
+    '...',
+    'Mais que fait-il dans un endroit pareil ?',
+    '...',
+    'Accepte la connection et écoutons ce qu\'il a à nous dire.',
 ];
 
 printLines(lines);

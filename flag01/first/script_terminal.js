@@ -91,7 +91,7 @@ function printLines(lines) {
                 if (userInput === hiddenMessage) {
                     window.location.href = "../error/denied.html";
                 } else if (userInput === tmp) {
-                    document.cookie = "flag01passed=true; path=/";
+                    document.cookie = "Co0k1e=true; path=/";
                     window.location.href = "../passed/index.html";
                 } else {
                     window.location.href = "../denied/denied.html";
@@ -102,7 +102,7 @@ function printLines(lines) {
             reloadButton.innerText = "Recharger la page";
             reloadButton.className = 'centered-button';
             reloadButton.onclick = function() {
-                window.location.href = 'flag01/first/flag01.html';
+                window.location.href = 'flag01.html';
             };
             footer.appendChild(reloadButton);
             footer.style.display = 'flex';

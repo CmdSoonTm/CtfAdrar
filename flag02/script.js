@@ -1,3 +1,18 @@
+function checkCookieAndRedirect(cookieName) {
+    var cookieArr = document.cookie.split(";");
+
+    for(var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
+
+        if(cookieName == cookiePair[0].trim()) {
+            return;
+        }
+    }
+
+    alert("tu dois d'abord trouver le Flag Co0k1e pour continuer ... Let's go");
+    window.location.href = '../../index.html';
+}
+
 function printLines(lines) {
     let lineIndex = 0;
     let charIndex = 0;
@@ -7,6 +22,8 @@ function printLines(lines) {
     let terminalElement = document.getElementById('terminal');
     let footer = document.createElement('footer');
     document.body.appendChild(footer);
+
+    checkCookieAndRedirect("Co0k1e");
 
     function printNextCharacter() {
         if(lineIndex < lines.length) {

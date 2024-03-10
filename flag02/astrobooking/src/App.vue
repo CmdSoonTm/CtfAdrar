@@ -4,7 +4,6 @@
             <nav>
                 <router-link to="/">Accueil</router-link> |
                 <router-link to="/Booking">Booking</router-link> |
-                <router-link to="/Connection">Connection</router-link> |
                 <router-link to="/Contact">Contact</router-link>
             </nav>
         </header>

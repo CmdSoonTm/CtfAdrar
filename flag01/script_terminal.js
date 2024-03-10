@@ -91,7 +91,7 @@ function printLines(lines) {
                 if (userInput === hiddenMessage) {
                     window.location.href = "error/denied.html";
                 } else if (userInput === tmp) {
-                    document.cookie = "flag01passed=true; path=/";
+                    document.cookie = "Co0k1e=true; path=/";
                     window.location.href = "passed/index.html";
                 } else {
                     window.location.href = "denied/denied.html";
@@ -102,7 +102,7 @@ function printLines(lines) {
             reloadButton.innerText = "Recharger la page";
             reloadButton.className = 'centered-button';
             reloadButton.onclick = function() {
-                window.location.href = '/flag01/flag01.html';
+                window.location.href = 'flag01.html';
             };
             footer.appendChild(reloadButton);
 
@@ -121,6 +121,9 @@ let lines = [
     'On dirait que M. Anderson a laissé un message pour nous.',
     'Sauras-tu le décoder ?',
     '',
+    'Peut-être qu\'en essayant avec des choses qu\'il aime...',
+    'Ou des choses qui lui sont familières comme.. moi (Terminal)',
+    '',
     'A toi de jouer ...',
 
 ];
@@ -131,7 +134,7 @@ function startTimer() {
     alert("Bienvenue dans le terminal de M. Anderson. Vous avez 4 minutes pour décoder le message.\n\nAprès quoi la page se rechargera et la clé sera réinitialisée.\n\nMême chose si vous validez une clé erronée !!\n\n### Bonne chance ###");
 
     var timerElement = document.getElementById('timer');
-    var timeLeft = 240; // 4 minutes
+    var timeLeft = 240;
 
     var timerInterval = setInterval(function() {
         timeLeft--;
@@ -141,14 +144,12 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            window.location.reload(); // Recharger la page
+            window.location.reload();
         }
     }, 1000);
 
-    // Lancer le binaire quand le timer commence
     setInterval(createStar, 100);
 
-    // Afficher le message
     setTimeout(function() {
         printLines(lines);
     }, 2000);

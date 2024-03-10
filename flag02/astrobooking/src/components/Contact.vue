@@ -10,7 +10,7 @@
             Et comme l'espace est infini, nous avons encore de nombreuses surprises à vous révéler<br /><br />
             N'hésitez pas à nous contacter pour toute demande, nous nous ferons un plaisir de vous répondre dans les plus brefs délais<br /><br />
             A très bientôt sur AstroBooking !<br /><br /><br />
-            Wallet Eth :: 0xc468E2BEE672D2011502983347C37573B17FD002
+            Contact : admin@astrobooking.coin
         </p>
     </div>
 </template>
